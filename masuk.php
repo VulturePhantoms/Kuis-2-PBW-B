@@ -16,8 +16,8 @@ if( !isset($_SESSION["login"]) ){
     <title>Masuk</title>
 </head>
 <body>
-    <a href="logout.php">Logout</a>
-    Selamat Datang <?php ?>
+    <a href="logout.php">Logout</a><br/>
+    <h2>Selamat Datang ke Dalam Website!<h2>
 
 </body>
 </html>

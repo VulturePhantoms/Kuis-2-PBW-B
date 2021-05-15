@@ -9,8 +9,9 @@ $database = "login";
 $koneksi = mysqli_connect($server, $user, $pass, $database)or die(mysqli_error($koneksi));
 
 $tampil = mysqli_query($koneksi, "SELECT * from user limit 0, 10");
+echo "ID".'  '."Username".'  '."Password". '<br/>';
 while($data = mysqli_fetch_array($tampil)) {
-    echo $data['id']. ' '. $data['username']. ' '. $data['password']. '<br/>';
+    echo $data['id']. '.   '. $data['username']. '    '. $data['password']. '<br/>';
 }
 
 if( isset($_COOKIE['id']) && isset($_COOKIE['user']) ) {
